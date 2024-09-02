@@ -1,0 +1,42 @@
+### create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email":"gauri@gmaill.comm",
+  "password":"Nikunj@gauri3232"
+}
+
+### signin user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email":"nikunj@gmaill.comm",
+  "password":"Nikunj@gauri3232"
+}
+
+### Sign out user
+POST http://localhost:3000/auth/signout
+
+### Fetch user
+GET http://localhost:3000/auth/8f17d5c2-5f67-4557-86ba-5f3b243d242a	
+Content-Type: application/json
+
+### Fetch users using email
+GET http://localhost:3000/auth/user?email=nikunj@nikunj.com
+Content-Type: application/json
+
+### fetch the current user detail
+GET http://localhost:3000/auth/whoami
+
+### Delete user
+DELETE http://localhost:3000/auth/c5d4b5b9-ccf7-48d1-87a7-1fa56e830762
+
+### Update user
+PATCH http://localhost:3000/auth/8f17d5c2-5f67-4557-86ba-5f3b243d242a	
+Content-Type: application/json
+
+{
+  "password" : "nikunj@nikunj.com"
+}
